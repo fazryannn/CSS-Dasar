@@ -1,0 +1,6 @@
+body{
+    background-color: lightblue; /* memberikan warna pada halaman */
+    background-image: url(img/background.jpeg); /* memberikan gambar pada background */
+    /* background-repeat: -y; digunakan dalam pemrograman web untuk mengatur pengulangan gambar latar belakang pada suatu elemen
+ */
+}

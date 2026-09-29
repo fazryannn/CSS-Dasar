@@ -1,15 +1,24 @@
 h1 {
-    color: mediumblue;
-    font-family: verdana, sans-serif;
-    font-size: 50px;
-    font-variant: small-caps
+    color: mediumblue;  /* mengatur warna */
+    font-family: verdana, sans-serif; /* mengatur jenis font */
+    font-size: 50px; /* mengatur ukuran huruf */
+    font-variant: small-caps; /* mengatur huruf besar/kecil  */
+    text-align: center; /* mengatur posisi teks */
 }
 
 p{
     color: red;
     font-family: georgia;
     font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 25px;
+    font-weight: bold; /* mengatur ketebalan teks */
+    font-style: italic; /* mengatur gaya font */
+    line-height: 25px;  /* mengatur tinggi suatu baris */
+    text-indent: 50px; /* menentukan indentansi baris pertama/paragraf*/
+    word-spacing: 3px; /* mengatur jarak antar kata */
+}
+
+a{
+    text-decoration: none; /* menambhakan atau menghilangkan underline */
+    text-transform: uppercase; /* mengatur huruf kapital tiap kata */
+    
 }
