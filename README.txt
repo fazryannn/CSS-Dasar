@@ -6,6 +6,8 @@ Minggu 28 Sep 2026
     selector, property, value, selector, property, value, 
 2. Latihan-2
     Backgroud-color, background image, background-repeter
+3. Latihan-3
+    Selector element html, id, class
 
 Sunber Belajar
 Youtube WPU

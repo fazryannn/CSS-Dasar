@@ -1,0 +1,25 @@
+body { /* selector element html */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(img/background.jpeg);
+}
+h1, h2{
+    color: salmon;
+}
+p {
+    color: white;
+}
+ul li a{
+    color: white;
+}
+ol li a{
+    color: salmon;
+}
+a{
+    color: white;
+}
+#p1 { /*id*/
+    color: orange;
+}
+.p2 {/*class*/
+    color: salmon;
+}
