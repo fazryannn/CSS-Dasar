@@ -8,6 +8,8 @@ Minggu 28 Sep 2026
     Backgroud-color, background image, background-repeter
 3. Latihan-3
     Selector element html, id, class
+4. Latihan 4
+    Pseudo link,hover,active,visited,first-child,last-child,nth-child,first-of-type,last-of-type
 
 Sunber Belajar
 Youtube WPU

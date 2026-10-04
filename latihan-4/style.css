@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+.pseudo:link{
+    color: salmon;
+}
+.pseudo:hover{
+    font-family: arial;
+    font-size: 30px;
+}
+.pseudo:active{
+    font-style: italic;
+}
+.pseudo:visited{
+    color: red;
+}
+.link{
+    text-align: left;
+}
+li:nth-child(3n) a{
+    color: red;
+}
+p:last-of-type{
+    color: red;
+}
