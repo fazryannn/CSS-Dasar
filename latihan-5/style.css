@@ -1,0 +1,7 @@
+body{
+    font-family: arial;
+    color: darkgrey;
+}
+a{
+    color: inherit; /*mewarisi style yang ada dalam selector body*/
+}
