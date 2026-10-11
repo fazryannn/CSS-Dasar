@@ -1,0 +1,166 @@
+/* ==========================================================
+   STYLE PORTFOLIO - Muhamad Argi Fazriyana
+   Materi: Latihan 1-6 (selector/property/value, background,
+   selector element/id/class, pseudo, inheritance, specificity)
+   ========================================================== */
+
+
+/* ---------- LATIHAN 1 & 2: selector, property, value + background ----------
+   Pola dasar:  selector { property: value; }
+   Background halaman memakai pattern dari subtlepatterns.com.
+   Simpan gambarnya di folder yang sama dengan nama pattern.png.
+   Kalau gambar belum ada, background-color jadi cadangan. */
+html {
+    background-color: #dce5ea;
+    background-image: url("img/background.jpeg");
+    background-repeat: repeat;
+}
+
+/* Isi halaman berupa lembar putih di tengah */
+body {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+
+    /* LATIHAN 5 (inheritance): font, warna, dan ukuran teks ditulis
+       sekali di body, lalu diwariskan ke p, li, td, label, dll. */
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2b2f33;
+}
+
+
+/* ---------- LATIHAN 3: selector element ---------- */
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1f3a4d;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #c5d3db;
+    margin: 25px 0;
+}
+
+th {
+    background-color: #1f3a4d;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Elemen form tidak mewarisi font secara otomatis,
+   jadi dipaksa mewarisi dari parent dengan nilai inherit */
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 6px;
+}
+
+button {
+    background-color: #1b7f79;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+}
+
+
+/* ---------- LATIHAN 3: selector id ---------- */
+#atas {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #1b7f79;
+}
+
+/* Judul tiap bagian (sekaligus tujuan page anchor) */
+#tentang, #data, #pengalaman, #pendidikan, #minat, #kontak {
+    border-left: 6px solid #1b7f79;
+    padding-left: 10px;
+}
+
+
+/* ---------- LATIHAN 3: selector class ----------
+   Tambahkan class di HTML:
+   <img src="Foto.jpg" width="150" class="foto">
+   <ul class="menu"> */
+.foto {
+    border: 4px solid #1b7f79;
+    padding: 4px;
+    background-color: #ffffff;
+}
+
+.menu {
+    background-color: #eef4f6;
+    padding: 12px 12px 12px 40px;
+}
+
+
+/* ---------- LATIHAN 4: pseudo class ----------
+   Urutan link pseudo wajib: link, visited, hover, active */
+a:link {
+    color: #1b7f79;
+}
+
+a:visited {
+    color: #6b4e8a;
+}
+
+a:hover {
+    color: #d9822b;
+    text-decoration: none;
+}
+
+a:active {
+    color: #b3261e;
+}
+
+/* Link menu lebih spesifik daripada a:link biasa (lihat Latihan 6) */
+.menu a:link {
+    color: #1f3a4d;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #d9822b;
+    text-decoration: underline;
+}
+
+/* first-child / last-child */
+.menu li:first-child {
+    font-weight: bold;
+}
+
+.menu li:last-child {
+    font-weight: bold;
+    border-top: 1px dashed #1b7f79;
+    margin-top: 6px;
+}
+
+/* nth-child: baris tabel selang-seling */
+tbody tr:nth-child(even) {
+    background-color: #eef4f6;
+}
+
+/* first-of-type / last-of-type (paragraf langsung di dalam body) */
+p:first-of-type {
+    background-color: #eef4f6;
+    padding: 10px;
+}
+
+p:last-of-type {
+    text-align: right;
+}
+
+
+/* ---------- LATIHAN 6: specificity ----------
+   Tabel di form juga kena aturan "tbody tr:nth-child(even)" di atas.
+   Selector di bawah lebih spesifik (form + tbody + tr + pseudo),
+   jadi menang dan baris form tetap putih. */
+form tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
